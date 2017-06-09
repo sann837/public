@@ -1,0 +1,6 @@
+com\aetna\insurance\memberservice\service\MemberServiceImpl.class
+com\aetna\insurance\memberservice\dao\MemberServiceDAO.class
+com\aetna\insurance\memberservice\model\Member.class
+com\aetna\insurance\memberservice\dao\MemberServiceDAOImpl.class
+com\aetna\insurance\memberservice\model\Address.class
+com\aetna\insurance\memberservice\service\MemberService.class
