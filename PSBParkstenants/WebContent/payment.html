@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>Payment</title>
+
+<style type="text/css">
+.container input {
+	float: right;
+}
+
+.img {
+	background:
+		url("https://www.mysmartmove.com/sites/SmartMove/img/slider/secure.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.center {
+ margin-top:50px;
+    margin-left:150px;
+    width: 100%;
+    padding: 10px;
+}
+</style>
+
+</head>
+<body class="img center">
+	
+		<div class="container center" >
+			<div class="row" align="left">
+				<!-- You can make it whatever width you want. I'm making it full width
+on <= small devices and 4/12 page width on >= medium devices -->
+				<div class="col-xs-12 col-md-4">
+
+
+					<!-- CREDIT CARD FORM STARTS HERE -->
+					<div class="panel panel-default credit-card-box">
+						<div class="panel-heading display-table">
+							<div class="row display-tr">
+								<label for="cardNumber"><span STYLE="color: #4e596b; font-size: 20pt; margin-left:130px">Payment Details</span></label>
+								<div class="display-td">
+									<img class="img-responsive pull-right"
+										src="http://i76.imgup.net/accepted_c22e0.png">
+								</div>
+							</div>
+						</div>
+						<div class="panel-body">
+							<form role="form" id="payment-form" action="PaymentServlet" method="POST">
+								<div class="row">
+									<div class="col-xs-12">
+										<div class="form-group">
+											<label for="cardNumber">CARD NUMBER</label>
+											<div class="input-group">
+												<input type="tel" class="form-control" name="cardNumber"
+													placeholder="Ex: 1234567890"
+													required autofocus /> 
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12">
+										<div class="form-group">
+											<label for="cardNumber">NAME ON CARD</label>
+											<div class="input-group">
+												<input type="tel" class="form-control" name="nameOnCard"
+													placeholder="Ex: John Smith" 
+													required autofocus /> 
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-7 col-md-7">
+										<div class="form-group">
+											<label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span
+												class="visible-xs-inline">EXP</span> DATE</label> <input type="tel"
+												class="form-control" name="cardExpiry" placeholder="MM / YY"
+												 required />
+										</div>
+									</div>
+									<div class="col-xs-5 col-md-5 pull-right">
+										<div class="form-group">
+											<label for="cardCVC">CVV</label> <input type="tel"
+												class="form-control" name="CVV" placeholder="Ex: 123"
+												 required />
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-xs-12">
+										<div class="form-group">
+											<label for="cardNumber">Amount</label>
+											<div class="input-group">
+												<input type="tel" class="form-control" name="amount"
+													placeholder="Ex : 500" 
+													required autofocus /> 
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="col-xs-12">
+										<button class="btn btn-success btn-lg btn-block" type="submit">Pay Now</button>
+									</div>
+								</div>
+								<div class="row" style="display: none;">
+									<div class="col-xs-12">
+										<p class="payment-errors"></p>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- CREDIT CARD FORM ENDS HERE -->
+
+
+				</div>
+
+
+
+			</div>
+		</div>
+
+		<!-- If you're using Stripe for payments -->
+		<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+</body>
+</html>

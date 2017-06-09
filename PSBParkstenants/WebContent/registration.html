@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<!-- Website CSS style -->
+		<link href="Registration.css" rel="stylesheet">
+
+		<!-- Website Font style -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<link rel="stylesheet" href="style.css">
+		<!-- Google Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+		<title>Tenant Registration</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row main">
+				<div class="main-login main-center">
+				<h4>Register here to access tenant portal.</h4>
+					<form class="" action="RegistrationServlet" method="POST">
+						<h3>Company Details:</h3>
+						<div class="row">
+						<div class="form-group">
+							<label for="name" class="cols-sm-2 control-label">Company Name</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-home fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="name" id="name"  placeholder="Ex:Ektha solutions"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="email" class="cols-sm-2 control-label">Email</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="email" id="email"  placeholder="Ex:John@gmail.com"/>
+								</div>
+							</div>
+						</div>
+						</div>
+
+						<div class="form-group">
+							<label for="phonenumber" class="cols-sm-2 control-label">Phone Number</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-phone fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="phonenumber" id="phonenumber"  placeholder="Ex:7855511833"/>
+								</div>
+							</div>
+						</div>
+                          <h4>Address:</h4>
+						<div class="form-group">
+							<label for="addressline1" class="cols-sm-2 control-label">Addressline1</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="addressline1" id="addressline1"  placeholder="Ex:3050 Regent BLVD"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="Addressline2" class="cols-sm-2 control-label">Addressline2</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="addressline2" id="addressline2"  placeholder="Ex:Suite 150"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="City" class="cols-sm-2 control-label">City</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="city" id="city"  placeholder="Ex:Irving"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="confirm" class="cols-sm-2 control-label">State</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="state" id="state"  placeholder="Ex:Texas"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="confirm" class="cols-sm-2 control-label">Country</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="country" id="country"  placeholder="Ex:United States"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="confirm" class="cols-sm-2 control-label">Zipcode</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="zipcode" id="zipcode"  placeholder="Ex:75063"/>
+								</div>
+							</div>
+						</div>
+						<h3>Contact Details:</h3>
+						<div class="form-group">
+							<label for="name" class="cols-sm-2 control-label">FirstName</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="firstname" id="name"  placeholder="Ex:madhu"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="name" class="cols-sm-2 control-label">LastName</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="lastname" id="lastname"  placeholder="Ex:munagala"/>
+								</div>
+							</div>
+						</div>
+						
+				        <div class="form-group">
+							<label for="email" class="cols-sm-2 control-label">Contact Email</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope fa aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="temail" id="email"  placeholder="Ex:John@gmail.com"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="phonenumber" class="cols-sm-2 control-label">Phone Number</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-phone fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="tphonenumber" id="phonenumber"  placeholder="Ex:7855511833"/>
+								</div>
+							</div>
+						</div>
+                          <h4>Address:</h4>
+						<div class="form-group">
+							<label for="addressline1" class="cols-sm-2 control-label">Addressline1</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="taddressline1" id="addressline1"  placeholder="Ex:3050 Regent BLVD"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="Addressline2" class="cols-sm-2 control-label">Addressline2</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="taddressline2" id="addressline2"  placeholder="Ex:Suite 150"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="City" class="cols-sm-2 control-label">City</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="tcity" id="city"  placeholder="Ex:Irving"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="confirm" class="cols-sm-2 control-label">State</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="tstate" id="state"  placeholder="Ex:Texas"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="confirm" class="cols-sm-2 control-label">Country</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="tcountry" id="country"  placeholder="Ex:United States"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="confirm" class="cols-sm-2 control-label">Zipcode</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="tzipcode" id="zipcode"  placeholder="Ex:75063"/>
+								</div>
+							</div>
+						</div>
+						
+						<h4>Account Credentials</h4>
+						
+						<div class="form-group">
+							<label for="username" class="cols-sm-2 control-label">UserId</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="userid" id="userid"  placeholder="james569"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="password" class="cols-sm-2 control-label">Password</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="password" class="form-control" name="password" id="password"  placeholder="james_156"/>
+								</div>
+							</div>
+						</div>
+						
+						<!-- <div class="form-group ">
+							<input type="button" id="button" class="btn btn-primary btn-lg btn-block login-button" value="Register"/>
+						</div> -->
+						
+						<div class="row">
+									<div class="col-xs-12">
+										<button class="btn btn-success btn-lg btn-block" type="submit">Register</button>
+									</div>
+								</div>
+						
+					</form>
+				</div>
+			</div>
+		</div>
+
+		 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
