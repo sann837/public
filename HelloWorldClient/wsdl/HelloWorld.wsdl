@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="HelloWorld"
+	     xmlns="http://schemas.xmlsoap.org/wsdl/"
+	     xmlns:tns="http://ddmwsst.com/helloworld"
+	     xmlns:x1="http://ddmwsst.com/helloworld/types"
+	     xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	     xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	     targetNamespace="http://ddmwsst.com/helloworld"
+	     xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+    <wsdl:types>
+	<schema targetNamespace="http://ddmwsst.com/helloworld/types" 
+		xmlns="http://www.w3.org/2001/XMLSchema" 
+		xmlns:x1="http://ddmwsst.com/helloworld/types" 
+		elementFormDefault="qualified">
+        <element name="helloRequest">
+            <complexType>
+                <sequence>
+                    <element name="requestMsg" type="string"/>
+                </sequence>
+            </complexType>
+        </element>
+        <element name="helloResponse">
+            <complexType>
+                <sequence>
+                    <element name="responseMsg" type="string"/>
+                </sequence>
+            </complexType>
+        </element>      
+    </schema>
+    </wsdl:types>
+
+    <wsdl:message name="helloRequestMessage">
+        <wsdl:part name="in" element="x1:helloRequest"/>
+    </wsdl:message>
+    <wsdl:message name="helloResponseMessage">
+        <wsdl:part name="out" element="x1:helloResponse"/>
+    </wsdl:message>
+   
+    <wsdl:portType name="HelloWorld">
+        <wsdl:operation name="sayHello">
+            <wsdl:input name="sayHelloRequest" message="tns:helloRequestMessage"/>
+            <wsdl:output name="sayHelloResponse" message="tns:helloResponseMessage"/>
+        </wsdl:operation>      
+    </wsdl:portType>
+
+    <wsdl:binding name="HelloWorld_SOAPBinding" type="tns:HelloWorld">
+	<soap12:binding transport="http://www.w3.org/2003/05/soap/bindings/HTTP/" style="document" />
+	<operation name="sayHello">
+	    <soap12:operation style="document" soapAction=""/>
+	    <input>
+			<soap12:body use="literal" />
+	    </input>
+	    <output>
+			<soap12:body use="literal" />
+	    </output>
+	</operation>       
+    </wsdl:binding>
+
+    <wsdl:service name="HelloWorld">
+        <wsdl:port name="SoapPort" binding="tns:HelloWorld_SOAPBinding">
+            <soap12:address location="http://localhost:8080/helloworld/HelloWorld"/>
+        </wsdl:port>
+    </wsdl:service>
+</definitions>
