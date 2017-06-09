@@ -1,0 +1,37 @@
+Hi, My name is <Rabie>.
+
+I have been working as a java developer about  <7.5> years.
+
+Have worked in developing web and enterprise applications using  Java
+, the associated frameworks & tools in the java eco system.
+
+Front End
+====================
+On the frontend I have used MVC frameworks like spring mvc, struts,
+ along with HTML, CSS, JSP, javascript, ajax and jquery. 
+
+
+
+Backend
+===============================
+On the backend I have worked with core java, spring, hibernate, 
+SOAP based web services & restful services. I have used different
+modules of spring like spring-core, spring-jdbc, spring-orm, spring-mvc,
+spring-aop, etc.
+
+
+I have worked with both the Waterfall & Agile methodologies.
+
+I have participated in Scrum iteration planning and our sprints were for
+3-4 weeks. I have also used extreme Programming practices like TDD, pair programming and Continuous Integration.
+
+Currently, I'm working at <Savvis> in <Saint Louis> from the <last 8 months>. 
+
+
+TALK ABOUT YOUR MOST RECENT PROJECT NOW  - keep it brief and tell more when they ask.
+
+
+Current project---
+			Client  -  Savvis, St. Louis, MO 
+			Role: JAVA Developer 
+			Duration: November 2013 - Present 

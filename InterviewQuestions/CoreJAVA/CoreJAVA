@@ -1,0 +1,133 @@
+
+Basics of JAVA
+------------------------
+1.  What is JAVA ?
+2.  Features of JAVA ?
+3.	What are the Different types of applications you can build with JAVA ?
+4.  What is path and classpath ? 
+2.  Difference between JDK, JRE and JVM ?
+3.  Explain JAVA memory model?
+4.  Different data types in JAVA ?
+5.  Explain the design of JAVA class ?
+6.	Different types of operators ?
+7.  Top 5 operators ?
+8.  Explain how each control statement works ? 
+	(if-else, for, while, do-while, ternary, switch, break and continue)
+
+
+OOPS
+-------------
+9.  What is Class and Object ?
+10.  What are different OOPS concepts?
+11.  What is Abstraction?
+12.  What is Encapsulation?
+13.  What is the difference between abstraction and encapsulation?
+14. What is Inheritance?
+15. What is Polymorphism?
+16. What is method overloading and method overriding ?
+17. What is static in JAVA ?
+18. What is final ?
+19. What is final, finally, finalize ?
+20. What is static and dynamic binding ?
+21. Abstract class vs interface ?
+22. Which one you choose between abstract and interface ? ( DISCUSS)
+23. Why do create abstract classes in application development ?
+24. why do create interfaces in application development ?
+25. What are different types of access modifiers ?
+26. What is call by value ?  ( DISCUSS)
+27. What is HAS-A relation ?
+
+
+String
+-----------------------------
+28. What is String in JAVA?
+29. What is String pool ?
+30. Why String is immutable ?
+31. How do you make a class immutable ?
+32. StingBuilder vs StringBuffer ?
+33. ==  vs equals ?
+34  Top 5 methods in String class ?
+
+
+
+Exception Handling
+-------------------------------
+35. What is Exception Handling  and How do you achieve it ?
+36. How do you make sure a code must be executed even if exception happens ?
+37. What code you normally write in finally block ?
+38. What are checked vs unchecked exceptions ?
+39. How do you create custom Exception ?
+40. How does exception propagation works ?
+41. throw vs thorws?
+42. Exception vs Error ?
+43. What are inner classes ?
+44. What is Anonymous class ?
+
+
+---------------------------------
+Collections
+------------------------------------
+45. JAVA Collection framework tree ?
+46. ArrayList vs LinkedList?
+47. ArrayList vs Set?
+48. Which one you prefer between ArrayList vs LinkedList ?
+49. How do you sort collection of elements in JAVA ?
+50. What is Collections class in JAVA ?
+51. HashTable vs HashMap?
+52. What is HashMap?
+53. How does HashMap Works?
+54. What is HashMap collison? 
+55. What is ConcurrentHashMap?
+56. Why do you think Strings makes approriage keys for HashMap ?
+57. What kind of classes are good for HashMap keys ?
+58. What is Iterator vs ListIterator?
+59. Comparable vs Comparator interfaces?
+60. Treeset and TreeMap?
+61. what is contract between hashcode and equals?
+62. Why do you need overridge Hashcode and equals?
+
+
+-------------------------------
+Multi-Threading
+-------------------------------
+63. What is multi threading ?
+64. How do you create Threads ?
+65. How do you synchronize your code ?
+66. What is volatile ?
+67. What is race condition ?
+68. What is dead lock  ?
+69. What is ThreadLocal ?
+70. What is ThreadPool ?
+71. How do you use Executor framework ?
+72. What is starvation ?
+73. Synchronized methods vs Synchronized blocks ?
+
+---------------------
+Miscellaneous
+----------------------
+74. What is serialization and externalization ?
+75. How do you avoid a variable particiapting in serialization ?
+76. What is marker interface ?
+77. What is Enum in JAVA ?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

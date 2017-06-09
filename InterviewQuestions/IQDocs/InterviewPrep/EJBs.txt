@@ -1,0 +1,53 @@
+Web Container - both static and dynamic first.
+Earlier EJB 2 does not have POJO
+Earlier 3 has POJO, they are loosely coupled and they can easily be tested.
+
+
+There are 3 types of beans:
+1) Entity Beans
+2) Session Beans 
+					- Stateful 
+					- Stateless (worked)
+3) Message Driven Beans (MDBs) (worked)
+
+
+Database isolation levels 
+--------------------------
+
+Isolation level              Dirty reads     Non-repeatable reads    	Phantoms
+
+Read Uncommitted 				may occur 		may occur 				may occur 
+Read Committed  				may occur 		may occur 
+Repeatable Read  				may occur 
+Serializable  
+
+============================================================================================================================
+
+Transaction Attributes
+----------------------
+
+    Container Managed Transactions - In this type, container manages the transaction states.
+    Bean Managed Transactions - In this type, developer manages the life cycle of transaction states.
+
+    REQUIRED - Indicates that business method has to be executed within transaction otherwise a new transaction will be started for that method.
+
+    REQUIRES_NEW - Indicates that a new transaction is to be started for the business method.
+
+    SUPPORTS - Indicates that business method will execute as part of transaction.
+
+    NOT_SUPPORTED - Indicates that business method should not be executed as part of transaction.
+
+    MANDATORY - Indicates that business method will execute as part of transaction otherwise exception will be thrown.
+
+    NEVER - Indicates if business method executes as part of transaction then an exception will be thrown.
+
+============================================================================================================================
+
+EJB3  Security annotation
+----------------------------
+	
+Add the @SecurityDomain("other") security annotation to the EJB declaration to tell the EJB container to apply authorization to this EJB.
+Add the @RolesAllowed({ "guest" }) annotation to the EJB declaration to authorize access only to users with guest role access rights.
+Add the @RolesAllowed({ "guest" }) annotation to the Servlet declaration to authorize access only to users with guest role access rights.
+Add a <login-config> security constraint to the WEB-INF/web.xml file to force the login prompt
+

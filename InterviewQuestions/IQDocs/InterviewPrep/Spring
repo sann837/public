@@ -1,0 +1,55 @@
+1.  What is Spring ?
+2.  What is IOC (or Dependency Injection)? 
+3.  What are the benefits of IOC (Dependency Injection)?
+4.  What are the different types of IOC (dependency injection) ? 
+5.  What are the advantages of Spring framework?
+6.  What are features of Spring ?
+7.  Which one is better in injection, setter or contructor ?
+8.  What is the difference between Bean Factory and Application Context ? 
+9.  What are the common implementations of the Application Context ?
+10. How do you load spring configuration file ?
+11. What is the typical Bean life cycle in Spring Bean Factory Container ?
+12. What do you mean by Bean wiring ?
+13. What do you mean by Auto Wiring?
+14. What are the ways to access Hibernate using Spring ?
+15. Stpes to  integrate Hibernate in Spring?
+16. Steps to integrate JPA in Spring ?
+17. What are Bean scopes in Spring Framework ?
+18. Why Spring beans are Singleton ?
+19. When do you need to have prototype for Sping Beans ?
+20. What is AOP?
+21. How the AOP used in Spring?
+22. What do you mean by Aspect ?
+23. What do you mean by JointPoint?
+24. What do you mean by Advice?
+25. What are the types of Advice?
+26. For what purpose you have used Spring AOP ?
+27. How do you use Spring AOP for transaction management ?
+28. What are the types of the transaction management Spring supports ?
+29. What are the benefits of the Spring Framework transaction management ?
+30. Explain about the Spring DAO support ?
+31. What are the exceptions thrown by the Spring DAO classes ? 
+32. What is Spring's JdbcTemplate ?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

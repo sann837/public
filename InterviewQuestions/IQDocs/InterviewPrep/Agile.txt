@@ -1,0 +1,27 @@
+Agile:
+
+-  Have been working for close to 4 years
+   Savvis, KBM group and Citi bank
+
+   
+1) Agile project management is an iterative approach to planning and guiding project processes.
+2) Agile is based on Sprint Planning, Product Backlog, Sprint Backlog, Daily Scrum, Sprint Review + Shippable Product and Sprint Retrospective.
+3) In Scrum team, there is Product Owner, Scrum Master and the Team.
+4) In the sprint planning meeting, the product owner describes the highest priority features to the entire team. The team asks enough questions that they can turn a high-level user story of the product backlog into the more detailed tasks of the sprint backlog. 
+5) In product backlog, 
+	-	there is the list of all desired features, can contain bugs.
+	-	maintain and prioritize by product owner
+	-	Items can be added by anyone.
+6) In Sprint Backlog,
+	-	there is a to-do list for the sprint meeting. 
+	-	created by the scrum team.
+	-	prioritize by the product owner.
+	- there is task board, which is visible to everyone.
+7) Daily Scrum,
+	-	Everyday, for the 15 mins in any time of day, team comes in the team room, report each other that what we have done, what we are doing and what we will do.
+	-	there is a burndown chart, which shows how much work is remaining,
+	-	maintained by scrum master.
+8)	Sprint Review and Shippable Product,
+	- In the end of every sprint, there is a sprint review, in which feedback generated.
+	-	Product backlog prioritized, addition and remove tasks from there.
+9)	

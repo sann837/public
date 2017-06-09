@@ -1,0 +1,12 @@
+1.  What is Servlet ?
+2.  Life cycle of Servlet ?
+3.  What is HttpServlet ?
+4.  How do you write Servlet ?
+5.  What are important methods of Servlet ?
+6.  How do you map the Servlets to request urls in web.xml ?
+7.  forward vs sendRedirect ?
+8.  What is Filter ?
+9.  ServeltConfig vs ServletContext ?
+10. What is Attribute and it's scopes ?
+11. What are init and context parameters ?
+12. What does load-on-startup do web.xml ?

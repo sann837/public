@@ -1,0 +1,28 @@
+"Hi, My name is Rizwan.
+
+I have been working as a java developer for about 7 years.
+
+My primary strengths are in java development using Core Java
+
+& the associated frameworks & tools in the java eco system.
+
+On the backend I have worked with core java, spring, hibernate, 
+
+SOAP based web services & restful services.
+
+On the frontend I have used MVC frameworks like spring mvc, struts,
+
+javascript, ajax using jquery.
+
+I have worked with both the Waterfall & Agile methodologies.
+
+I have participated in Scrum iteration planning and our sprints were for
+
+3-4 weeks & extreme Programming practices like TDD and CI.
+
+TALK ABOUT YOUR PROJECTS NOW STARTING FROM THE MOST RECENT."									
+									
+									
+									
+									
+									

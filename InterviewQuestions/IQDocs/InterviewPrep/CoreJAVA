@@ -1,0 +1,92 @@
+1.  Features of JAVA ?
+2.  Difference between JDK, JRE and JVM ?
+3.  Explain JAVA memory model?
+4.  Different types of variables in JAVA ?
+5.  What is Class and Object ?
+6.  What are different OOPS concepts
+7.  What is Abstraction?
+8.  What is Encapsulation?
+9.  What is the difference between abstraction and encapsulation?
+10. What is Inheritance?
+11. What is Polymorphism?
+12. What is method overloading and method overriding ?
+13. What is static in JAVA ?
+14. What is final, finally, finalize ?
+15. What is static and dynamic binding ?
+16. Abstarct vs inerface ?
+17. Which one you choose between abstarct and interface ? ( DISCUSS)
+18. Why do create abstaract classes in application development ?
+19. why do create interfaces in applciation development ?
+20. What are different types of access modifiers ?
+21. What is call by value ?  ( DISCUSS)
+22. What is String pool ?
+23. Why String is immutable ?
+24. How do you make a class immutable ?
+25. StingBuilder vs StringBuffer ?
+26. ==  vs equals 
+27. What is Exception Handling  and How do you achieve it ?
+28. How do you make sure a code must be executed even if exception happens ?
+29. What code you normally write in finally block ?
+30. What are checked vs unccked exceptions ?
+31. How do you create custom Exception ?
+32. How does exception progation works ?
+33. throw vs thorws
+34. Exception vs Error ?
+35. What are inner classes ?
+36. What is Anonymous class ?
+37. JAVA Collection framework tree ?
+38. ArrayList vs LinkedList
+39. ArrayList vs Set
+40. Which one you prefer beween ArrayList vs LinkedList ?
+41. How do you sort collection of elements in JAVA ?
+42. What is Collections class in JAVA ?
+43. HashTable vs HashMap
+44. What is HashMap
+45. How does HashMap Works
+46. What is HashMap collison 
+47. What is ConcurrentHashMap
+48. Why do you think Strings makes approriage keys for HashMap ?
+49. What kind of classes are good for HashMap keys ?
+50. What is Iterator vs ListIterator?
+51. Comparable vs Comparator interfaces
+52. Treeset and TreeMap
+53. what is contract between hashcode and equals
+54. Why do you need overridge Hashcode and equals
+55. What is multi threading ?
+56. How do you create Threads ?
+57. How do you synchronize your code ?
+58. What is volatile ?
+59. What is race condition ?
+60. What is dead lock  ?
+61. What is ThreadLocal ?
+62. What is ThreadPool ?
+63. How do you use Executor framework ?
+64. What is starvation ?
+65. Synchronized methods vs Synchronized blocks ?
+66. What is serialization and externalization ?
+67. How do you avoid a variable particiapting in serialization ?
+68. What is marker interface ?
+69. What is Enum in JAVA ?
+70. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

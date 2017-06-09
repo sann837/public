@@ -1,0 +1,132 @@
+webservices
+---------------------------------
+
+1) SOAP or Simple Object Access Protocol 
+
+	a)	SOAP is a protocol for exchanging XML-based messages over the network using application protocols like http. 
+	b)	SOAP message comprises of a SOAP envelope. The envelope can be broken into a header and a body. Header contains context related definitions like security while the body contains   
+	    actual message
+=====================================================================================================================
+
+2) WSDL 
+	a)	WSDL is a XML document which is used to describe a web service. 
+	b)  A WSDL completely describes what web service exposes, what parameter it expects, structure of output it returns, location of web service. 
+	c)  A WSDL contains types, messages, portType, binding and service
+	
+============================================================================================================================
+	
+3) WSDL elements	
+
+    Definitions	:  Root element of all WSDL documents. It defines the name of the web service
+	
+    types		:  The data types - in the form of XML schemas - to be used in the messages
+
+    Message		:  Arguments to be mapped to a method invocation.
+    
+    Port type 	:  Set of operations mapped to one or more end points, defining the collection of 
+	               operations for a binding; 
+	
+	Operation	:  Definition of the operation for a message, such as naming a method
+
+    Binding		:  The concrete protocol and data formats for the operations and messages defined for a 
+	               particular port type.
+
+    Service		:  The service map the binding to the port
+	
+    Port		:  Combination of a binding and a network address, providing the target address of the 
+	               service communication.
+
+============================================================================================================================
+
+4)	Apache CXF -  contract first/top-down 
+
+	a) Define the data types in XSD
+    b) Define the WSDL 
+	c) Add CXF dependencies(cxf-rt-frontend-jaxws,  cxf-rt-transports-http) in pom.xml (MAVEN )  
+	d) Use Wsdl2Java tool generate artifacts	
+	e) Code the web service methods in the generated class
+	f) Declare the CXF servlet in web.xml
+	g) Publish  service endpoints via a spring based configuration file. 
+	   <jaxws:endpoint  id="bookShelfService" implementor="com.aranin.weblog4j.services.BookShelfServiceImpl" address="/bookshelfservice" />
+	h) Build the WAR
+	i) After the webapp is deployed, the web service (WSDL) is available via the URL
+
+===========================================================================================================================================
+
+5)  Apache CXF -  contract - last/bottom-up 
+
+	a) Add CXF dependencies(cxf-rt-frontend-jaxws,  cxf-rt-transports-http) in pom.xml (MAVEN ) 
+
+	b)	Creating a Service Endpoint Interface (SEI)
+		-	@WebService – This is an annotation JAXWS library. It turns a normal POJO into a webservice. 
+		-	@WebMethod – This annotation is optional and is mainly used to provide a name attribute to the public method in wsdl.
+	
+	c)	Implementing the service class
+		-	@WebService(endpointInterface = "service interface",  serviceName = "servicename")
+		
+	d) CXF uses JAXB as default data binding component. 
+	
+	e) Publish service endpoints via a spring based configuration file. 
+	   <jaxws:endpoint  id="bookShelfService" implementor="com.aranin.weblog4j.services.BookShelfServiceImpl" address="/bookshelfservice" />
+	
+	f) Need to wire spring and CXF through web.xml			
+	    <servlet-class>
+	        org.apache.cxf.transport.servlet.CXFServlet
+	    </servlet-class>
+
+============================================================================================================================
+	
+6) Apache CXF  Client/Consumer  steps   
+
+	a)	Use the wsdl2java utility to generate the Java stub code from the WSDL contract. 
+	
+	b)	The stub code provides the supporting code that is required to invoke operations on the remote service.
+	
+	c)	For CXF clients, the wsdl2java utility can generate the following kinds of code:
+		Stub code 					-  supporting files for implementing a CXF client.
+		Client starting point code  -  sample client code that connects to the remote service and invokes every operation on the remote service.
+		
+	d) create a client using JaxWsProxyFactoryBean. This class is a factory which works with the SEI proxies to invoke web service methods.	
+
+============================================================================================================================
+
+7) JAX-WS web service  Contract - first /top-down	
+
+	a) Define XSD for data types
+	b) Define WSDL file (Describe types, messages, portType, operations,  binding, service)
+	c) wsimport to generate the artifacts
+	d) Add business logic in the generated service class methods
+	e) Define the endpoint in sun-jaxws.xml
+	f) Declare WSServlet in web.xml
+	   <servlet>        
+        <servlet-name>jaxws</servlet-name>
+        <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+       </servlet>
+	   
+	g) Define end point in sun-jaxws.xml file
+		<endpoints   xmlns='http://java.sun.com/xml/ns/jax-ws/ri/runtime'    version='2.0'>
+			<endpoint   name='helloPersonService'        		
+						implementation='nl.example.hello_person.service.HelloPersonServiceImpl'
+						url-pattern='/helloPersonService' />
+		</endpoints>
+		
+
+
+============================================================================================================================
+
+8) JAX-WS web service  Contract - last /bottom up	
+
+	a) End point interface with @WebService annotation 
+	b) Implementation class that implement sthe end point interface
+	c) Wsgen tool to generate the artifacts required to deploy the service 
+	d) Package the files into a WAR file.
+	e) Deploy the WAR file. The web service artifacts are generated by the Application Server during deployment.
+
+============================================================================================================================
+
+9) JAX-WS  Client
+
+	a) wsimport tool, which generates JAX-WS portable artifacts based on a WSDL file.
+	b) make the call through  port, a local object that acts as a proxy for the remote service.
+
+============================================================================================================================

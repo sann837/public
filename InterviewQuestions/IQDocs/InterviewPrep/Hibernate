@@ -1,0 +1,27 @@
+1.  What is ORM ?
+2.  What is Hibernate?
+3.  What is the advantage of Hibernate over jdbc?
+4.  How do you implemente Hibernate in the application development ?
+5.  What are the important tags of hibernate.cfg.xml?
+6.  What are the Core interfaces are of Hibernate framework?
+7.  SessionFactory  vs Session 
+8.  What is Hibernate Query Language (HQL)?
+9.  How do you map Java Objects with Database tables?
+10. What is the difference between load() and get()?
+11. What are different types of fetch ?
+12. What is lazy loading ?
+13. Difference between fetch type and fetch mode ?
+14. What are different fetch modes ?
+15. What is the difference between and merge and update ?
+16. What are the different states of the Hibernate obejects ?
+17. Define cascade and inverse option in one-many mapping?
+18. What are different Collection types in Hibernate ?
+19. What do you mean by fetching strategy ?
+20. What are different inheritance strategies in Hibernate?
+21. What are the different associations?
+22. What is first level and second level cache in Hibernate ?
+23. Have implemented any second level caching in Hibernate ?
+24. What is Query Cache ?
+25. What is Criteria API ?
+26. What is bidirectional in Hibernate associations ?
+27. What is automatic dirty checking?

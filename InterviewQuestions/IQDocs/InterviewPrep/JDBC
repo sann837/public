@@ -1,0 +1,8 @@
+1.  What is JDBC ?
+2.  What is the difference between a Statement and a PreparedStatement?
+3.  How do you call stored procedures in JDBC
+4.  How do you manage transactions in JDBC 
+5.  What is connection pooling ?
+6.  How do you created datasoruces ?
+7.  What is SQL Injection and how do you prevent it ?
+8.  

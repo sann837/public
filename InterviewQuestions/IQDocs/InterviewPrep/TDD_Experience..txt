@@ -1,0 +1,19 @@
+I have used TDD in some of my projects where we did development from scratch.
+
+In TDD, you start writing interfaces and then create test cases first
+using method stubs as dummy implementations.
+
+Initially all the tests fail.
+
+Now go and add code to make all the tests pass.
+
+In projects where the code was already there & I had to do enhancements,
+there are 2 approaches.
+
+1) Edit & Pray - You modify code and pray that everything works and you
+   have not broken existing functionality.
+
+2) First check the code test coverage of the existing code & then
+   add more junit tests to get good test coverage.
+   After that, you make code changes for the enhancements or bug fixes
+   and make sure that all the tests pass.

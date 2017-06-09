@@ -1,0 +1,17 @@
+1.  What is Spring MVC ?
+2.  Explain the flow of Spring MVC ?
+3.  What is Spring MVC framework?
+4.  What is DispatcherServlet and ContextLoaderListener?
+5.  What is the front controller class of Spring MVC?
+6.  How can we use Spring to create Restful Web Service returning JSON response?
+7.  Can we have multiple Spring configuration files?
+8.  Difference between <context:annotation-config> vs <context:component-scan>?
+9.  Difference between @Component, @Controller, @Repository & @Service annotations?
+10. What does the ViewResolver class?
+11. How you did server side validation using Spring MVC?
+12. How to validate form data in Spring Web MVC Framework?
+13. How to handle exceptions in Spring MVC Framework?
+14. How to use Tomcat JNDI DataSource in Spring Web Application?
+15. How can you achieve different request URL's mapping to same method in Spring controller ?
+16. Have you used Spring security ? If So, How did you implement it ?
+17. 

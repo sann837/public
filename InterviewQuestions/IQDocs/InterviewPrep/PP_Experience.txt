@@ -1,0 +1,26 @@
+Pair Programming:
+In pair programming, there are 2 developers working on the same enhancement or feature on the
+same computer at the same time.
+
+One will be on keyboard and other one is helping him.
+
+It is like a journey where 2 friends are driving in a car &
+they want to go from point A to point B.
+
+One friend is the DRIVER and the other is the NAVIGATOR.
+
+In PP, the driver is controlling the KVM (keyboard, Video & Mouse). 
+The navigator monitors what the driver is doing and provides suggestions to improve
+the code.
+
+After every 30 minutes, the driver & the navigator trade places.
+
+Advantages:
+1) It reduces the overall time taken for coding with better quality.
+2) Coding and reviewing the code happens at the same time.
+  -naming conventions, coding conventions, testability 
+   of code & other metrics which improve the quality of the code.
+
+Disadvantges:
+1) It could be a possibility that they do not agree on the same point & each wants to do it
+   his own way. In that case, they should seek resolution from the tech lead or architect.

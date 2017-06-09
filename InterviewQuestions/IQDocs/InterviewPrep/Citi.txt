@@ -1,0 +1,49 @@
+Citi Bank - Tampa, FL
+Java Developer 
+Duration: Aug 2010 - July 2012
+
+Application Overview
+--------------------
+1) Citi Thank you rewards is web-based application to manage rewards through citi cards usage by their customers. 
+
+2) You can redeem points like cash back, travel, gift cards, merchandise etc.
+
+Features of application:
+------------------------
+
+1) When Customers buy some things through their Citi credit card, on the basis of their credit card usage, they can get points. 
+
+2) They can redeem their points into rewards. Rewards could be some merchandise, gift cards, travel or dining.
+
+How Technologies Were Used:
+---------------------------
+1) Struts2 MVC, javascript, JQuery, HTML, CSS:
+
+	- Featured Rewards Page with profile information and points you have.
+	- Things you can get as rewards. 
+	
+2)  SOAP web services - 
+	Implemented SOAP webservices to connect to merchandise website so on the basis of those points they have they can redeem their rewards.
+
+3) Hiberate:
+	Used Hibernate for the persistence to update & retrieve information from the DB.
+	
+===========================================================================================================
+	
+	Implementation Details:
+•	Worked through daily Agile SCRUM meetings  in developing the project.
+•	Involved in requirements and prepare use cases and involved in designing, development and integration testing of the modules 
+•	Developed the Presentation tier using Struts2. 
+•	Implemented UI layer using HTML, CSS, JavaScript/JQuery , AJAX and JSP.
+•	Developed application service components and configured beans using  Spring IOC
+•	Developed SOAP web services using Apache CXF framework.  
+•	Used XSD, WSDL for web services implementation.
+•	Wrote HQL queries for  persistence layer using Hibernate.
+•	Used Log4j logger tool for logging warnings and error messages.
+•	Used MAVEN as application building tool and Eclipse for IDE
+•	Deployed the application on Tomcat server
+•	Implemented JUnit test cases and  tested application through Unit Testing and Functional Testing
+•	Used SVN as a source code management system.
+•	Involved in Bug fixing and debugging the code through Eclipse.
+
+Technology Stack : Struts2, JSP, Java Script, CSS, XML, XSD, SOAP, JUnit, AJAX, PL/SQL, ANT, Eclipse

@@ -1,0 +1,71 @@
+
+1) How Hibernate  cache works
+
+Caching in ORM frameworks  to reduce number of queries made to database in a single transaction. 
+Hibernate  provides caching functionality, in two layers.
+
+    a)	Fist level cache(session -level) : This is enabled by default and works in session scope. Read more about hibernate first level cache.
+	
+    b)	Second level cache (session factory level) : This is apart from first level cache which is available to be used globally in session factory scope.
+	
+================================================================================================================================================
+	
+2) Hibernate  second level cache
+	
+    a)	Whenever hibernate session try to load an entity, the very first place it look for cached copy of entity in first level cache (associated with particular hibernate session).
+    b)	If cached copy of entity is present in first level cache, it is returned as result of load method.
+    c)	If there is no cached entity in first level cache, then second level cache is looked up for cached entity.
+    d)	If second level cache has cached entity, it is returned as result of load method. But, before returning the entity, it is stored in first level cache also so that next invocation  
+	    to load method for entity will return the entity from first level cache itself, and there will not be need to go to second level cache again.
+    e)	If entity is not found in first level cache and second level cache also, then database query is executed and entity is stored in both cache levels, before returning as response of 
+	    load() method.
+    f)	Second level cache validate itself for modified entities, if modification has been done through hibernate session APIs.
+    g)	If some user or process make changes directly in database, the there is no way that second level cache update itself until “timeToLiveSeconds” duration has passed for that cache 
+	    region. In this case, it is good idea to invalidate whole cache and let hibernate build its cache once again. You can use below code snippet to invalidate whole hibernate second level cache.
+		
+
+============================================================================================================================
+
+3)	Second level implementation using Ehcache 
+
+	a)	Hibernate ships with the ehcache library
+	
+	b)	Configuring EhCache
+		<property key="hibernate.cache.use_second_level_cache">true</property>
+		<property name="hibernate.cache.region.factory_class">net.sf.ehcache.hibernate.EhCacheRegionFactory</property>
+
+	c)	Configuring entity objects
+		- If you are using hbm.xml files then use below configuration:
+			<class name="com.application.entity.DepartmentEntity" table="...">
+				<cache usage="read-write"/>
+			</class>
+
+		- Otherwise, if you are using annotations, use these annotations:
+		
+			@Entity
+			@Cache(usage=CacheConcurrencyStrategy.READ_ONLY,
+			region="department")
+			public class DepartmentEntity implements Serializable
+			{
+				//code
+			}
+			
+	d)	caching strategy can be of following types 
+		read-only , read-write
+		
+	e) configure ehcache.xml
+		-	By default, Ehcache will create separate cache regions for each entity that you configure for caching. 
+		-	You can change the defaults for these regions by adding the configuration to your ehcache.xml. 
+		-	To provide this configuration file, use this property in hibernate configuration:
+			<property name="net.sf.ehcache.configurationResourceName">/ehcache.xml</property>
+		
+============================================================================================================================
+
+4) Query caching in Hibernate
+	a)	You can also enable query caching. To do so configure it in your configuration file
+		<property key="hibernate.cache.use_query_cache">true</property>
+
+	b)	where queries are defined in your code, add the method call setCacheable(true) to the queries that should be cached:
+		sessionFactory.getCurrentSession().createQuery("...").setCacheable(true).list();
+		
+============================================================================================================================

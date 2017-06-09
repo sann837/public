@@ -1,0 +1,13 @@
+1.  What is HTTP ?
+2.  How does a request and response model work ?
+3.  GET vs POST ?
+4.  What are different HTTP status codes ?
+5.  Web application folder structure ?
+6.  What is web.xml ?
+7.  What is the artifact that web application is packaged into ?
+8.  How do you secure web application ?
+9.  What is webcontainer ?
+10. What is the difference between webserver and application server ?
+11. How do you implement session management in web application ?
+12. What is MVC ?
+13. What is welcome-file lsit in web.xml ?

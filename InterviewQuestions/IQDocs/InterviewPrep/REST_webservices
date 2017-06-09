@@ -1,0 +1,32 @@
+1)  What is REST Web Services?
+2)  What is JAX-RS API?
+3)  Name some implementations of JAX-RS API?
+4)  What are advantages of REST web services?
+5)  What are disadvantages of REST web services?
+6)  What is a Resource in Restful web services?
+7)  What are different HTTP Methods supported in Restful Web Services?
+8)  Compare SOAP and REST web services?
+9)  How would you choose between SOAP and REST web services?
+10) Name important annotations used in JAX-RS API?
+11) What is the use of @XmlRootElement annotation?
+12) What does a @QueryParam do?
+13) What does a @Path annotation do?
+14) What does a @PathParam do?
+15) What are frameworks available to implement REST web services? 
+16) Can you describe any one RESTful web service you have written?
+17) What are different ways to test web services?
+18) Can we maintain user session in web services?
+19) How to set different status code in HTTP response?
+20) What all tools have you used to write RESTful web service?
+21) How is JAXB related to RESTful web services?
+22) What is WADL?
+23) What will you do when an error code has to be returned to the client OR How will you handle application error scenarios in RESTful web service
+24) With a RESTful web service, whose state is getting transferred and how?
+25) What is the Restlet framework?
+26) What is the Jersey framework?
+27) What is the RESTeasy framework?
+28) What is the difference between AJAX and REST?
+29) How will you handle synchronization issues when multiple clients try to consume web service simultaneously?
+30) Can one RESTful web service be a client to another RESTful web service for performing business operations? Describe with example? 
+31) How to download file in JAX-RS?
+32) How will you migrate from SOAP web service to RESTfull web service?
