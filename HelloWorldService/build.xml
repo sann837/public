@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<project name="HelloWorldService" basedir=".">
+	
+	<property name="lib.folder" value="../apache-cxf-2.5.1/lib" />
+	<property name="src.dir" value="src" />
+	<property name="build.dir" value="build" />
+	<property name="config.dir" value="config" />
+	<property name="dest.dir" value="dest" />
+	<property name="webapp.name" value="helloworld" />
+	
+	<target name="clean">
+		<delete dir="${build.dir}" />	
+		<delete dir="${dest.dir}" />		
+	</target>
+	
+	<target name="init" depends="clean">		
+		<mkdir dir="${build.dir}" />
+		<mkdir dir="${dest.dir}" />
+	</target>
+	
+	<path id="classpath">
+		<fileset dir="${lib.folder}">
+			<include name="*.jar" />				
+		</fileset>
+		<pathelement path="${build.dir}" />
+		<pathelement path="${config.dir}" />
+	</path>
+	
+	<target name="runWsdl2Java">
+		<java classname="org.apache.cxf.tools.wsdlto.WSDLToJava" fork="true">
+			<arg value="-server" />
+			<arg value="-d" />
+			<arg value="${src.dir}" />
+			<arg value="./wsdl/HelloWorld.wsdl" />
+			<classpath>
+				<path refid="classpath" />
+			</classpath>
+		</java>
+	</target>
+	
+	<target name="compile" depends="init">					
+		<javac destdir="${build.dir}" target="1.6" debug="true" deprecation="on" optimize="off" failonerror="true">
+			<src path="${src.dir}" />			
+			<classpath refid="classpath" />
+		</javac>		
+	</target>
+	
+	<target name="createWar" depends="compile" description="Packages app as WAR">		
+		<war destfile="${dest.dir}/${webapp.name}.war" webxml="web.xml">
+			<classes dir="${config.dir}" includes="*.*"/>			
+			<webinf dir="./wsdl" includes="*.wsdl" />
+			<classes dir="${build.dir}" />			
+			<lib dir="${lib.folder}">
+				<include name="*.jar" />			
+			</lib>
+		</war>		
+	</target>
+	
+</project>
