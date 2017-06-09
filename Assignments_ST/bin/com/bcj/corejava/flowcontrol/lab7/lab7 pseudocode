@@ -1,0 +1,34 @@
+This pseudocode represent the how a sales person wins the contest based on number of items he sold
+
+create a package, name it that  based on which environment you are working on
+import the necessary classes here we need scanner class
+create a class named  LargeNumber(follow the naming convention) 
+class name should be  related to the functionality we are developing   
+create a method called fingLarge(follow naming convention)
+In the method follow the below logic
+create an object of the scanner class with reference variable 
+we have been provided that there are 10 integers entered by the user
+create an array of integers and store the input values entered by the user in the array
+assume the first number entered is the larger number  
+use the for loop and iterate through condition, that is total number of user inputs
+starting from the first in each iteration we are using decision making statement 
+to find out whether entered number is larger than the previous number 
+if the entered number is larger we are making it as larger number so far entered
+after all iterations completed we are end up with a one larger number
+we are displaying the winner of the sales contest through println statement
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
